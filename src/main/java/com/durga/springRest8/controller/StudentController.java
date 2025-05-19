@@ -2,6 +2,8 @@ package com.durga.springRest8.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,8 @@ import com.durga.springRest8.service.StudentService;
 
 @RestController
 public class StudentController {
+	
+	public static final Logger LOGGER=LoggerFactory.getLogger(StudentController.class);
 	@Autowired
 	public StudentService service;
 
